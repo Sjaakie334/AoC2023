@@ -1,0 +1,24 @@
+{
+  "name": "aoc2023",
+  "version": "1.0.0",
+  "description": "AdventOfCode2023",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjaakie334/AoC2023.git"
+  },
+  "author": "Jordy Grooten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sjaakie334/AoC2023/issues"
+  },
+  "homepage": "https://github.com/Sjaakie334/AoC2023#readme",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
