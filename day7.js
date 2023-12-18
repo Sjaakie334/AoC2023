@@ -40,13 +40,16 @@ function part(partNumber){
     const arr = resultArray.sort((a, b) => cleverSort(b.sort, a.sort))
     const finalArr = arr.map((hand, index) => hand.bid * (index + 1));
     const resultString = `Part ${partNumber}: `;
-    console.log(resultString, sum(finalArr));
+    // console.log(resultString, sum(finalArr));
+    return sum(finalArr);
 }
 
-part(1);
-part(2);
+const part1 = part(1);
+const part2 = part(2);
 /**
  * result with actual:
  * Part 1:  251029473
  * Part 2:  251003917
  */
+
+export const d7Result = { part1, part2 }

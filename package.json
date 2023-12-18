@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "AdventOfCode2023",
   "main": "index.js",
+  "config": {"day": "day11"},
   "type": "module",
   "scripts": {
-    "start": "start nodemon ",
+    "start": "nodemon index.js",
     "test": "start nodemon test.js"
   },
   "repository": {

@@ -1,3 +1,7 @@
-import { partOne } from "./day3.js";
+import { d12Result } from './day12/index.js';
+import { allResults } from './results.js';
 
-partOne;
+const results = allResults;
+// console.log(results);
+
+console.log(d12Result);

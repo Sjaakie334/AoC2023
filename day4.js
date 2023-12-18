@@ -9,7 +9,7 @@ const p2scratchcards = getScratchCards(getLines('d4a'));
 let test = 0;
 for (let i = 1; i < 11; i++) {
     test = (test === 0) ? 1 : test * 2;
-    console.log(`${i} match: ${test} points.`);
+    // console.log(`${i} match: ${test} points.`);
 
 }
 
@@ -53,7 +53,7 @@ function partOne(scratchCards) {
                 matches++;
             }
         });
-        if (matches > 10) console.log({ card, points, matches });
+        // if (matches > 10) console.log({ card, points, matches });
         collectedPoints.push(points);
         points = 0;
         matches = 0;
@@ -96,7 +96,7 @@ function partTwoLong(scratchCards) {
         // collectedPoints.push(points);
         // points = 0;
         matches = 0;
-        console.log(arr.length);
+        // console.log(arr.length);
     };
 
     // console.log('collected: ', collectedPoints);
@@ -131,7 +131,7 @@ function partTwoShort(scratchCards) {
         }
 
         matches = 0;
-        console.log(arr.length);
+        // console.log(arr.length);
     };
 
     return arr.length;
@@ -140,8 +140,9 @@ function partTwoShort(scratchCards) {
 
 // console.log('scratchcards: ', scratchcards);
 
-const result1 = partOne(getScratchCards(lines));
-console.log('result1: ', result1); // result1: 26426
+const part1 = partOne(getScratchCards(lines));
+// console.log('result1: ', part1); // result1: 26426
+export const d4Result = {part1, part2: 6227972}
 
 
 // const result2Short = partTwoShort(p2SScratchcards);

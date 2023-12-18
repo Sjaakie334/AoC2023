@@ -31,7 +31,7 @@ for (let i = 0; i < splits.length - 1; i++) {
   maps.push(split);
 }
 
-console.log(maps)
+// console.log(maps)
 
 
 function p1 () {
@@ -40,7 +40,7 @@ function p1 () {
   for (const seed of seeds) {
   
     let loc = seed
-    console.log(loc)
+    // console.log(loc)
     for (let i = 0; i < maps.length; i++) {
       for (let assignment of maps[i]) {
         const [to, from, range] = assignment
@@ -55,9 +55,11 @@ function p1 () {
     locations.push(loc);
   }
   
-  console.log(locations.join(" "));
-  console.log('p1:', Math.min(...locations));
+  // console.log(locations.join(" "));
+  // console.log('p1:', Math.min(...locations));
+  locations.join(" ");
+  return Math.min(...locations);
 }
 
 
-p1();
+export const d5p1Result = p1();

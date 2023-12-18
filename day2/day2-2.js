@@ -129,4 +129,5 @@ function checkValid(){
     }).reduce((sum, value)=> sum + value)
 }
 
-console.log(checkValid());
+// console.log(checkValid());
+export const d2p2Result = checkValid();

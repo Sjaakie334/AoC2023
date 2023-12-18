@@ -8,10 +8,6 @@ const nodes = lines.slice(2).reduce((nodes, node) => {
     return nodes;
 }, {})
 
-console.log({
-    part1: getSteps({ from: "AAA", to: "ZZZ" }), // 20777
-    part2: getSteps({ from: "..A", to: "..Z" })  // 13289612809129
-})
 
 function getSteps({ from, to }) {
     const current = Object.keys(nodes).filter(node => new RegExp(from).test(node));
@@ -27,3 +23,9 @@ function getSteps({ from, to }) {
     const lcm = (a, b) => a * b / gcd(a, b);
     return steps.length ? steps.reduce(lcm) : 0;
 }
+
+export const d8Result = {
+    part1: getSteps({ from: "AAA", to: "ZZZ" }), // 20777
+    part2: getSteps({ from: "..A", to: "..Z" })  // 13289612809129
+};
+// console.log(d8Result)

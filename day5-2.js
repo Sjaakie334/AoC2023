@@ -99,4 +99,5 @@ for (let i = minSearch; i <= maxSearch; i++) {
   }
 }
 
-console.log(getLocationofSeed(minLocSeed))
+// console.log(getLocationofSeed(minLocSeed))
+export const d5p2Result = getLocationofSeed(minLocSeed);

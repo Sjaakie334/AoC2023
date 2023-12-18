@@ -60,14 +60,14 @@ function partTwo({ matrix }) {
                     parts.push(extractPartNumber(matrix, adjCoords));
                 }
             });
-            
+
             if (parts.length === 2) {
                 ratios.push(parts[0] * parts[1]);
             }
         }
     });
 
-    
+
 
     return sum(ratios);
 }
@@ -75,7 +75,7 @@ function partTwo({ matrix }) {
 
 
 
-const result1 = partOne({ matrix });
-const result2 = partTwo({ matrix: p2Matrix });
-console.log('result1: ', result1, '\nresult2: ', result2);
-
+const part1 = partOne({ matrix });
+const part2 = partTwo({ matrix: p2Matrix });
+// console.log('result1: ', part1, '\nresult2: ', part2);
+export const d3Result = { part1, part2 };

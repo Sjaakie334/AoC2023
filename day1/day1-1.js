@@ -5,16 +5,14 @@ const caliArr = [
 	'treb7uchet'
 ];
 
-function getcalibrationValue () {
-	const values = [];
-	caliArr.forEach(value => {
-		const copyValue = value.replace(/[^0-9]/g, '');
-		const firstDigit = copyValue.charAt(0);
-		const lastDigit = copyValue.charAt(copyValue.length - 1);
-		const combi = `${firstDigit}${lastDigit}`;
-		values.push(combi);
-	});
-	console.log(values);
-}
+const values = [];
+caliArr.forEach(value => {
+	const copyValue = value.replace(/[^0-9]/g, '');
+	const firstDigit = copyValue.charAt(0);
+	const lastDigit = copyValue.charAt(copyValue.length - 1);
+	const combi = `${firstDigit}${lastDigit}`;
+	values.push(combi);
+});
+// console.log(values);
+export const d1p1Result = values;
 
-getcalibrationValue();

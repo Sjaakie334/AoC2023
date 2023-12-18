@@ -126,4 +126,5 @@ function checkValid(){
     })
 }
 
-console.log(checkValid());
+// console.log(checkValid());
+export const d2p1Result = checkValid();

@@ -1054,7 +1054,7 @@ function getcalibrationValue () {
 		const combi = `${firstValue}${lastValue}`;
 		values.push(combi);
 	});
-	console.log(values);
+	// console.log(values);
 	return values;
 }
 
@@ -1066,7 +1066,8 @@ function getResult () {
 		result += value;
 	});
 
-	console.log(result);
+	// console.log(result);
+	return result;
 }
 
-getResult();
+export const d1p2Result = getResult();
