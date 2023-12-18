@@ -15,8 +15,8 @@ function result(part) {
 }
 
 export const d9Result = {
-  p1: result(1),
-  p2: result(2)
+  part1: result(1),
+  part2: result(2)
 } // { p1: 2174807968, p2: 1208 }
 
 // console.log(d9Result);
