@@ -30,11 +30,11 @@ function part2() {
         const str = platform.map(x => x.join('')).join('');
         const test = cache[str];
 
-        if (cache) {
+        if (test) {
             if (str === tempPlatform) break;
             if (loops === 0) tempPlatform = str;
 
-            platform.splice(0, platform.length, [...test].map(x => [...x]));
+            platform.splice(0, platform.length, ...test.map(x => [...x]));
             loops++;
             continue;
         }
